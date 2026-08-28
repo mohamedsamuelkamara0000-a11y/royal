@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./image/royal_logo.PNG">
-    <title>Royal</title>
+    <title>Royal International High School</title>
     <style>
         *{
             margin: 0;
@@ -23,13 +23,14 @@
         }
         header{
             background-color: #00bbff;
-            color: #fff;
+            color: #000;
             padding: 25px;
             font-size: 27px;
             font-weight: bold;
             position: fixed;
             top: 0;
             width: 100%;
+            
         }
         header ul{
             float: right;
@@ -42,7 +43,12 @@
         header ul li a{
             color: #fff;
             text-decoration: none;
+            transition: color 0.2s ease;
         }
+       header ul li a:hover{
+        color: #000;
+       }
+
         .main{
             padding: 10px;
             margin-top: 100px;
@@ -179,9 +185,9 @@
 <body>
     <div class="desktop">
         <header>
-            <img src="./image/royal_logo.PNG" id="logo">
+           <a href="./index.html"> <img src="./image/royal_logo.PNG" id="logo"></a>
             RIHS
-            <ul>
+            <ul class="nav">
                 <li><a href="index.html">About</a></li>
                 <li><a href="admission.html">Admissions</a></li>
                 <li><a href="contact.html">Contact</a></li>
