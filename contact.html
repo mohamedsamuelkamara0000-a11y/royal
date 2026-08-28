@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/royal_logo.PNG">
+    <title>Royal - Contacts</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            font-family: 'inter', sans-serif;
+        }
+        body{
+            color: #f4f4f4;
+        }
+        #logo{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        header{
+            background-color: #00bbff;
+            color: #fff;
+            padding: 25px;
+            font-size: 27px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        header ul{
+            float: right;
+            display: flex;
+            flex-direction: right;
+            gap: 25px;
+            list-style-type: none;
+
+        }
+        header ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .main{
+            padding: 10px;
+            margin-top: 100px;
+        }
+        .main h1, h2, h3{
+            color: #000;
+        }
+        .main h1{
+            margin-top: 10px;
+            color: #00bbff;
+        }
+        .main h2{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .main .headers{
+            font-size: 25px;
+            color: #00bbff;
+        }
+        .main .top-logo{
+            width: 20%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            border-radius: 50%;
+        }
+        .main .standard-pic{
+            width: 48.3%;
+            height: 500px;
+            border-radius: 7px;
+            object-fit: cover;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+        }
+        .main .learn-more{
+            padding: 14px;
+            background-color: #00bbff;
+            color: #fff;
+            border-radius: 7px;
+            border: none;
+            font-weight: bold;
+            font-size: 21px;
+            cursor: pointer;
+            width: 48.3%;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+        }
+        .main #learn-more{
+            display: none;
+        }
+        iframe{
+            width: 100%;
+        }
+        footer{
+            padding: 35px;
+            background-color: #00bbff;
+            color: #fff;
+            font-size: 19px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+            position: sticky;
+            bottom: 0;
+        }
+        #footer-logo{
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .mobile{
+            display: none;
+        }
+        @media(max-width: 600px){
+            .desktop{
+                display: none;
+            }
+            .mobile{
+                display: block;
+            }
+            #logo{
+                width: 30px;
+                height: 30px;
+            }
+            header{
+                font-size: 23px;
+            }
+            #menu-bar{
+                display: none;
+            }
+            #menu-bar ul{
+                display: none;
+                top: 80px;
+                width: 100%;
+                position: fixed;
+                background-color: #00bbff;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                list-style-type: none;
+            }
+            #menu-bar ul li{
+                padding: 20px;
+            }
+            #menu-bar ul li a{
+                font-size: 23px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+            .main .top-logo{
+            width: 57%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            }
+            .main .standard-pic{
+                height: 300px;
+                object-fit: cover;
+
+            }
+            .main .learn-more{
+                font-size: 16px;
+            }
+            .main #mobile-learn-more{
+                display: none;
+            }
+            .main h2{
+                color: #00bbff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <header>
+            <img src="./image/royal_logo.PNG" id="logo">
+            RIHS
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <h1>Contact Us</h1>
+            <br>
+            <h2>Feel free to reach out to us and secure a space for your child's education</h2>
+            <img src="./image/all_members.jpeg" alt="" class="standard-pic">
+            <img src="./image/potrait.jpeg" alt="" class="standard-pic">
+            <br><br>
+            <a href=""><button class="learn-more">Email Us</button></a>
+            <a href=""><button class="learn-more">Message Us</button></a>
+            <br><br>
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126285.16965352415!2d-13.398711937500016!3d8.459297999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf04c5437cc479f1%3A0xe382d4adfcbe133b!2sBabadorie%20Hill!5e0!3m2!1sen!2ssl!4v1783345758704!5m2!1sen!2ssl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <br><br>
+            <h2>Thanks for visiting our website and reaching out to us.</h2>
+        </div>
+        <footer><img src="./image/royal_logo.PNG" id="footer-logo"> Royal International High School &copy; 2026</footer>
+    </div>
+    <div class="mobile">
+        <header>
+            <img src="./image/royal_logo.PNG" id="logo">
+            RIHS
+            <ul>
+                <li><a id="menu"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 13 13" fill="#fff" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a></li>
+            </ul>
+        </header>
+        <div id="menu-bar">
+            <ul>
+                <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#fff" stroke="#00bbff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg> &nbsp; About Us</a></li>
+                <li><a href="admission.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#fff" stroke="#00bbff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> &nbsp; Admissions</a></li>
+                <li><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="#00bbff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> &nbsp; Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Apply for Admission</h2>
+            <br>
+            <h3>Takes this simple step, to gift your child the education they deserve</h3>
+            <br><br>
+            <img src="./image/potrait.jpeg" alt="" class="standard-pic">
+            <img src="./image/inclass.JPG" alt="" class="standard-pic">
+            <br><br>
+            <a href=""><button class="learn-more">Enquiries About School</button></a>
+            <a href=""><button class="learn-more">Apply for Admission</button></a>
+            <br><br>
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126285.16965352415!2d-13.398711937500016!3d8.459297999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf04c5437cc479f1%3A0xe382d4adfcbe133b!2sBabadorie%20Hill!5e0!3m2!1sen!2ssl!4v1783345758704!5m2!1sen!2ssl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <br><br>
+            <h3>Thanks for visiting our website and reaching out to us.</h3>
+        </div>
+        <footer>RIHS &copy; 2026</footer>
+    </div>
+
+    <script>
+        let menu = document.getElementById('menu');
+        menu.addEventListener('click', function myFunction(){
+            let change = document.getElementById('menu-bar')
+            if(change.style.display === "none"){
+                change.style.display = "block";
+            }
+            else{
+                change.style.display = "none";
+            }
+        });
+
+        document.querySelector('#learn-button').addEventListener('click', function learn(){
+            document.querySelector('#learn-more').style.display = "block";
+        });
+        document.querySelector('#mobile-learn-button').addEventListener('click', function learn(){
+            document.querySelector('#mobile-learn-more').style.display = "block";
+        });
+    </script>
+</body>
+</html>
